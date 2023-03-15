@@ -1,0 +1,8 @@
+# check linting
+npm run lint:fix
+LINT_RET=$?
+if [ $LINT_RET = 1 ]
+then
+ echo "PLEASE LINTER YOUR CODE BEFORE COMMITING";
+fi;
+exit $LINT_RET

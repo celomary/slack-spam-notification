@@ -1,0 +1,38 @@
+### SLACK SPAM NOTIFICATION ENDPOINT
+
+#### ABOUT
+
+ENDPOINT THAT ACCEPT JSON PAYLOAD AS A POST REQUEST AND SENDS AN ALERT TO THE USER IN CASE THE REQUEST MARKED AS SPAM
+
+#### USED TECHNOLOGIES
+
+NODEJS(EXPRESSJS)
+
+#### HOW IT WORKS
+
+BEFORE RUNING APP YOU HAVE TO CHANGE THE NAME OF _simple.env_ file TO _.env_
+AND PROVIDE ENVIROMENT VARIABLES INSIDE OF THE FILE WITH PROPER VALUE
+
+#### USED ENVIROMENT VARIABLES
+
+```
+PORT default 8000
+SLACK_ACCESS_TOKEN // make sure to add proper scopes
+SLACK_CHANNEL_NAME // name of the channel to send message to it
+```
+
+#### SCRIPTS
+
+```
+npm start // production
+```
+
+```
+npm run dev // development
+```
+
+#### ENDPOINT
+
+```
+http://127.0.0.1:$PORT/notification/spam
+```
